@@ -1,3 +1,5 @@
+@import url(responsive.css);
+
 :root {
   --text-color: hsl(228, 39%, 23%);
   --app-bg-color: hsl(12, 88%, 59%);
@@ -53,16 +55,17 @@ body {
 a {
   text-decoration: none;
 }
+
 /*
   
   
   - Header -
   
   
-  */
+*/
 
 .header {
-  margin-top: 3rem;
+  padding: 3rem 0;
 }
 .nav {
   display: flex;
@@ -70,7 +73,10 @@ a {
   align-items: center;
 }
 .nav__logo {
+  margin-top: 1rem;
+  line-height: 0;
 }
+
 .menu {
   display: flex;
   justify-content: center;
@@ -90,4 +96,54 @@ a {
 .menu__link--active {
 }
 .nav__button {
+  text-align: center;
 }
+
+.nav__toggle-icon {
+  display: none;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav__toggle-line {
+  position: relative;
+}
+.nav__toggle-line,
+.nav__toggle-line::before,
+.nav__toggle-line::after {
+  content: " ";
+  width: 4.5rem;
+  height: 0.5rem;
+  background-color: var(--text-color);
+  border-radius: 2rem;
+}
+
+.nav__toggle-line::before {
+  position: absolute;
+  top: 1rem;
+  transition: all ease 0.1s;
+}
+.nav__toggle-line::after {
+  position: absolute;
+  bottom: 1rem;
+  transition: all ease 0.1s;
+}
+.nav__toggle-icon--open .nav__toggle-line {
+  background-color: transparent;
+  transition: all ease 0.1s;
+}
+.nav__toggle-icon--open .nav__toggle-line::before {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+.nav__toggle-icon--open .nav__toggle-line::after {
+  transform: translateY(1rem) rotate(45deg);
+}
+
+/*
+  
+  
+  - Main -
+  
+  
+*/

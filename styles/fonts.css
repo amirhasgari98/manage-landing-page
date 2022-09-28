@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "BeVietnamPro-Regular";
+  src: url("../fonts/BeVietnamPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BeVietnamPro-Mesdium";
+  src: url("../fonts/BeVietnamPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BeVietnamPro-Bold";
+  src: url("../fonts/BeVietnamPro-Bold.ttf") format("truetype");
+}

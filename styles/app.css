@@ -1,0 +1,47 @@
+:root {
+  --text-color: hsl(228, 39%, 23%);
+  --app-bg-color: hsl(12, 88%, 59%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/*
+  
+  -- Component 
+  
+  */
+
+/*
+  
+  -- Helper Class
+  
+  */
+
+/*
+  
+  --App
+  
+  */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: "BeVietnamPro-Regular";
+}
+
+/*
+  
+  
+  - Header -
+  
+  
+  */

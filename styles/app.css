@@ -1,6 +1,7 @@
 :root {
   --text-color: hsl(228, 39%, 23%);
   --app-bg-color: hsl(12, 88%, 59%);
+  --btn-text-color: #fff;
 }
 
 *,
@@ -14,6 +15,17 @@
   -- Component 
   
   */
+.btn {
+  background-color: var(--app-bg-color);
+  padding: 1.2rem 3.5rem;
+  border-radius: 3rem;
+  color: var(--btn-text-color);
+  transition: all ease 0.1s;
+}
+.btn:hover {
+  background-color: hsl(12, 93%, 73%);
+  transition: all ease 0.1s;
+}
 
 /*
   
@@ -38,6 +50,9 @@ body {
   font-family: "BeVietnamPro-Regular";
 }
 
+a {
+  text-decoration: none;
+}
 /*
   
   
@@ -45,3 +60,34 @@ body {
   
   
   */
+
+.header {
+  margin-top: 3rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item {
+  padding: 0 2rem;
+}
+.menu__link {
+  color: var(--text-color);
+  transition: all ease 0.1s;
+}
+.menu__link:hover {
+  color: hsl(227, 12%, 61%);
+  transition: all ease 0.1s;
+}
+.menu__link--active {
+}
+.nav__button {
+}

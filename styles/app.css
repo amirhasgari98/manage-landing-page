@@ -1,7 +1,8 @@
 @import url(responsive.css);
 
 :root {
-  --text-color: hsl(228, 39%, 23%);
+  --title-color: hsl(228, 39%, 23%);
+  --text-color: hsl(227, 12%, 61%);
   --app-bg-color: hsl(12, 88%, 59%);
   --btn-text-color: #fff;
 }
@@ -55,6 +56,7 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   font-family: "BeVietnamPro-Regular";
+  counter-reset: count;
 }
 
 a {
@@ -91,7 +93,7 @@ a {
   padding: 0 2rem;
 }
 .menu__link {
-  color: var(--text-color);
+  color: var(--title-color);
   transition: all ease 0.1s;
 }
 .menu__link:hover {
@@ -109,7 +111,6 @@ a {
   height: 3rem;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .nav__toggle-line {
   position: relative;
@@ -120,7 +121,7 @@ a {
   content: " ";
   width: 4.5rem;
   height: 0.5rem;
-  background-color: var(--text-color);
+  background-color: var(--title-color);
   border-radius: 2rem;
 }
 
@@ -176,7 +177,7 @@ a {
 .home__title {
   font-family: BeVietnamPro-Bold;
   font-size: 7rem;
-  color: var(--text-color);
+  color: var(--title-color);
   line-height: 1.2;
   margin-top: 4rem;
   margin-bottom: 3rem;
@@ -199,4 +200,70 @@ a {
   width: 55rem;
 }
 .home__img {
+}
+
+/*
+  
+  
+  - service -
+  
+  
+*/
+.services {
+  margin-top: 10rem;
+}
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.service__description {
+}
+.service__question {
+  font-family: "BeVietnamPro-Bold";
+  font-size: 4rem;
+  color: var(--title-color);
+  margin-bottom: 1rem;
+  width: 46rem;
+}
+.service__caption {
+  color: var(--text-color);
+  width: 37rem;
+}
+.service__pros {
+  display: flex;
+  flex-direction: column;
+}
+.service__benefit {
+  margin-bottom: 5rem;
+}
+service__benefit:last-child {
+  margin-bottom: 0;
+}
+.service__title {
+  font-family: "BeVietnamPro-Bold";
+  color: var(--title-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+.service__title::before {
+  counter-increment: count;
+  content: "0" counter(count);
+  position: absolute;
+  width: 8rem;
+  height: 5rem;
+  background-color: var(--app-bg-color);
+  border-radius: 3rem;
+  top: -1.2rem;
+  right: 100%;
+  margin-right: 3rem;
+  color: #fff;
+  padding-top: 1.2rem;
+  padding-left: 3rem;
+  font-family: "BeVietnamPro-Medium";
+}
+
+.service__text {
+  color: var(--text-color);
+  width: 45rem;
 }

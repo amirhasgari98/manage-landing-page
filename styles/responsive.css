@@ -15,6 +15,10 @@
   .home__img {
     width: 42rem;
   }
+  .service__question {
+    font-size: 3rem;
+    width: 34rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -25,16 +29,34 @@
     flex-direction: column-reverse;
   }
   .home__content {
-    text-align: center
+    text-align: center;
   }
   .home__caption {
-    padding:0 9rem;
+    padding: 0 9rem;
   }
   .home__link {
     align-self: auto;
   }
   .home__photo {
     margin: 0 auto;
+  }
+  .service {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .service__question {
+    font-size: 5rem;
+    width: 41rem;
+    text-align: center;
+  }
+  .service__caption {
+    text-align: center;
+    padding-left: 4rem;
+  }
+  .service__pros {
+    margin-top: 7rem;
+    margin-left: 12rem;
   }
 }
 
@@ -46,7 +68,7 @@
     margin-top: 2rem;
     top: 100%;
     justify-content: center;
-    align-items: cneter;
+    align-items: center;
     width: 100%;
     align-items: center;
     right: 0;
@@ -87,11 +109,31 @@
     padding: 0 8rem;
   }
   .home__photo {
-   width: 51rem;
+    width: 51rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 556px) {
+  .service__benefit {
+    margin-right: 3rem;
+  }
+  .service__pros {
+    margin-left: 15rem;
+    
+  }
+  .service__title {
+    font-size: 2rem;
+  }
+  .service__title::before {
+    padding-top: 1rem;
+    padding-left: 2.8rem;
+  }
+  .service__text {
+    width: 39em;
+    margin-left: -10rem;
+  }
 }
 @media screen and (max-width: 542px) {
   .home__photo {
@@ -103,9 +145,43 @@
   .home__photo {
     width: 34rem;
   }
+  .home__caption {
+    width: 46rem;
+  }
   .home__img {
     width: 36rem;
   }
 }
+@media screen and (max-width: 414px) {
+  .service__description {
+    margin-left: 1rem;
+  }
+  .service__question {
+    font-size: 4rem;
+    padding-left: 1rem;
+  }
+  .service__caption {
+    padding-left: 4rem;
+  }
+  .service__pros {
+    margin-left: 25rem;
+  }
+  .service__title {
+    font-size: 1.8rem;
+    margin-left: -3rem;
+  }
+  .service__title::before {
+    margin-right: 1rem;
+    padding-top: 1.1rem;
+    padding-left: 2.9rem;
+  }
+  .service__text {
+    width: 45rem;
+    margin-left: -12rem;
+    padding-right: 6rem;
+  }
+ 
+}
+
 @media screen and (max-width: 320px) {
 }

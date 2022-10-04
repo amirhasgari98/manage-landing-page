@@ -121,7 +121,6 @@
   }
   .service__pros {
     margin-left: 15rem;
-    
   }
   .service__title {
     font-size: 2rem;
@@ -147,6 +146,7 @@
   }
   .home__caption {
     width: 46rem;
+    margin-right: 1rem;
   }
   .home__img {
     width: 36rem;
@@ -158,29 +158,32 @@
   }
   .service__question {
     font-size: 4rem;
-    padding-left: 1rem;
+    margin-right: 2rem;
   }
   .service__caption {
     padding-left: 4rem;
   }
   .service__pros {
-    margin-left: 25rem;
+    margin-left: 23rem;
   }
   .service__title {
-    font-size: 1.8rem;
-    margin-left: -3rem;
+    font-size: 1.5rem;
+    margin-left: -1rem;
   }
   .service__title::before {
-    margin-right: 1rem;
-    padding-top: 1.1rem;
-    padding-left: 2.9rem;
+    margin-top: 0.4rem;
+    margin-right: 0.9rem;
+    padding-top: 0.8rem;
+    padding-left: 2.6rem;
+    width: 7rem;
+    height: 4rem;
   }
   .service__text {
     width: 45rem;
-    margin-left: -12rem;
-    padding-right: 6rem;
+    margin-left: -9rem;
+    padding-right: 11rem;
+    font-size: 1.4rem;
   }
- 
 }
 
 @media screen and (max-width: 320px) {

@@ -46,7 +46,10 @@
   --App
   
   */
-
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -57,7 +60,7 @@ body {
   font-size: 1.6rem;
   font-family: "BeVietnamPro-Regular";
   counter-reset: count;
-  overflow-x: hidden;
+  position: relative;
 }
 
 a {

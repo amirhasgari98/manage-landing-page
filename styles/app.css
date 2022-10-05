@@ -337,3 +337,10 @@ service__benefit:last-child {
 .swiper-pagination-bullet-active {
   background: var(--app-bg-color) !important;
 }
+
+.comments-btn__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}

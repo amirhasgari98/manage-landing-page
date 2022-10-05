@@ -200,6 +200,9 @@
     font-size: 1.4rem;
     margin-bottom: 0;
   }
+  .comment__title {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 320px) {

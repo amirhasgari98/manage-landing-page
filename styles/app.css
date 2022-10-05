@@ -280,9 +280,9 @@ service__benefit:last-child {
   
   
 */
+
 .comments {
   margin-top: 2rem;
-  margin-bottom: 10rem;
 }
 .comment {
   margin-bottom: 5rem;
@@ -343,4 +343,40 @@ service__benefit:last-child {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+}
+
+/*
+  
+  
+  - CTA -
+  
+  
+*/
+
+.cta {
+margin-top: 5rem;
+}
+.cta-wrapper {
+  background-color: var(--app-bg-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.cta-wrapper__title {
+  max-width: 50rem;
+  font-family: "BeVietnamPro-Medium";
+  font-size: 4rem;
+  color: #fff;
+  margin: 8rem 0;
+  line-height: 1;
+}
+.cta-wrapper__btn {
+  font-family: "BeVietnamPro-Medium";
+  color: var(--app-bg-color);
+  background-color: #fff;
+}
+.cta-wrapper__btn:hover {
+  background-color: #fff;
+  color: hsl(12, 86%, 78%);
 }

@@ -58,6 +58,13 @@
     margin-top: 7rem;
     margin-left: 12rem;
   }
+  .swiper-pagination {
+    display: block;
+    position: static !important;
+    margin-top: 2rem;
+    color: red;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {

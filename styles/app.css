@@ -213,6 +213,7 @@ a {
   
   
 */
+
 .services {
   margin-top: 2rem;
 }
@@ -270,4 +271,69 @@ service__benefit:last-child {
 .service__text {
   color: var(--text-color);
   max-width: 45rem;
+}
+
+/*
+  
+  
+  - Comments -
+  
+  
+*/
+.comments {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+.comment {
+  margin-bottom: 5rem;
+}
+.comment__title {
+  text-align: center;
+  font-family: "BeVietnamPro-Bold";
+  font-size: 4rem;
+  color: var(--title-color);
+}
+.comments-content {
+  max-width: 65rem;
+  height: 16rem;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+  padding-top: 10rem;
+}
+.comments-content__img {
+  margin-bottom: 1rem;
+
+  margin-top: -19rem;
+}
+.comments-content__name {
+  font-family: "BeVietnamPro-Bold";
+  color: var(--title-color);
+  margin-top: 2rem;
+}
+.comments-content__caption {
+  text-align: center;
+  color: var(--text-color);
+  margin-top: 2rem;
+  max-width: 46rem;
+}
+
+.swiper-pagination {
+  display: none;
+}
+.swiper-slide {
+  margin-top: -12rem;
+}
+.swiper-pagination-bullet {
+  background: #fff !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border: 0.2rem solid var(--app-bg-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--app-bg-color) !important;
 }

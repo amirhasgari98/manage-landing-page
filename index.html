@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagesfavicon-32x32.png" />
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
@@ -108,8 +109,57 @@
           </div>
         </div>
       </section>
+      <section class="comments">
+        <div class="container">
+          <div class="comment">
+            <h5 class="comment__title">What they’ve Said</h5>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="comments-content">
+                  <img src="images/avatar-anisha.png" alt="avatar" class="comments-content__img" />
+                  <h3 class="comments-content__name">Anisha Li</h3>
+                  <p class="comments-content__caption">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comments-content">
+                  <img src="images/avatar-ali.png" alt="avatar" class="comments-content__img" />
+                  <h3 class="comments-content__name">Ali Bravo</h3>
+                  <p class="comments-content__caption">
+                    “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comments-content">
+                  <img src="images/avatar-richard.png" alt="avatar" class="comments-content__img" />
+                  <h3 class="comments-content__name">Richard Watts</h3>
+                  <p class="comments-content__caption">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comments-content">
+                  <img src="images/avatar-shanai.png" alt="avatar" class="comments-content__img" />
+                  <h3 class="comments-content__name">Shanai Gough</h3>
+                  <p class="comments-content__caption">
+                    “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </main>
     <div class="cover"></div>
+    <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>

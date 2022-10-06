@@ -61,6 +61,7 @@ body {
   font-family: "BeVietnamPro-Regular";
   counter-reset: count;
   position: relative;
+  overflow-y: hidden;
 }
 
 a {
@@ -354,17 +355,16 @@ service__benefit:last-child {
 */
 
 .cta {
-margin-top: 5rem;
+  margin-top: 5rem;
+  background-color: var(--app-bg-color);
 }
 .cta-wrapper {
-  background-color: var(--app-bg-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  
 }
 .cta-wrapper__title {
-  max-width: 50rem;
+  max-width: 58rem;
   font-family: "BeVietnamPro-Medium";
   font-size: 4rem;
   color: #fff;
@@ -379,4 +379,95 @@ margin-top: 5rem;
 .cta-wrapper__btn:hover {
   background-color: #fff;
   color: hsl(12, 86%, 78%);
+}
+
+/*
+  
+  
+  - Footer -
+  
+  
+*/
+.footer {
+  background-color: hsl(233, 12%, 13%);
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5rem 0;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo--mobile {
+  display: none;
+}
+.footer-logo__brand {
+}
+.footer-logo__link {
+}
+
+.footer-logo__socials {
+}
+.footer-logo__social {
+  padding: 0 0.3rem;
+}
+.footer-logo__social svg {
+  fill: #fff;
+}
+.footer-logo__social svg:hover {
+  fill: var(--app-bg-color);
+}
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: -1.2rem;
+  width: 50rem;
+}
+.footer-list {
+}
+.footer-pages {
+}
+.footer-pages__item {
+  padding: 0.8rem 0;
+}
+.footer-pages__link {
+  color: #fff;
+}
+.footer-pages__link:hover {
+  color: var(--app-bg-color);
+  transition: all ease 0.1s;
+}
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-newsletter__form {
+  display: flex;
+}
+.footer-newsletter__input {
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  padding: 0 2rem;
+  margin-right: 1rem;
+}
+.footer-newsletter__input:focus {
+  border: 2px solid hsl(12, 88%, 59%);
+}
+.footer-newsletter__btn {
+}
+.footer-newsletter__copyright {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.footer-newsletter__form--mobile {
+  display: none;
 }

@@ -2,6 +2,8 @@
 const navToggleIcon = document.querySelector(".nav__toggle-icon");
 const menu = document.querySelector(".menu");
 const cover = document.querySelector(".cover");
+let inputValue = document.querySelector(".input");
+let emailModal = document.querySelector(".footer-newsletter__modal");
 
 navToggleIcon.addEventListener("click", function () {
   navToggleIcon.classList.toggle("nav__toggle-icon--open");
@@ -28,4 +30,17 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 10,
     },
   },
+});
+
+//Email verification
+
+inputValue.addEventListener("keydown", function (event) {
+  emailModal.style.display = "block";
+  if (event.key === "@") {
+    emailModal.style.display = "none";
+  }
+  if (event.key === "Enter") {
+    inputValue.value = "";
+    emailModal.style.display = "none";
+  }
 });

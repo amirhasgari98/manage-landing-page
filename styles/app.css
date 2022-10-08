@@ -522,3 +522,12 @@ top: -12rem;
 .footer-newsletter__form--mobile {
   display: none;
 }
+
+.footer-newsletter__modal,
+.footer-newsletter__modal--mobile {
+  color: red;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  margin-right: 10rem;
+  display: none;
+}

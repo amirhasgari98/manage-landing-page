@@ -17,7 +17,8 @@
   
   -- Component 
   
-  */
+*/
+
 .btn {
   background-color: var(--app-bg-color);
   padding: 1.2rem 3.5rem;
@@ -34,7 +35,8 @@
   
   -- Helper Class
   
-  */
+*/
+
 .align-items-center {
   align-items: center;
 }
@@ -45,7 +47,8 @@
   
   --App
   
-  */
+*/
+
 html,
 body {
   overflow-x: hidden;
@@ -88,6 +91,7 @@ a {
 .simplify--mobile2 {
   display: none;
 }
+
 /*
   
   
@@ -125,8 +129,7 @@ a {
   color: hsl(227, 12%, 61%);
   transition: all ease 0.1s;
 }
-.menu__link--active {
-}
+
 .nav__button {
   text-align: center;
 }
@@ -179,9 +182,6 @@ a {
   
 */
 
-.main {
-}
-
 /*
   
   
@@ -224,8 +224,6 @@ a {
   align-items: center;
   width: 55rem;
 }
-.home__img {
-}
 
 /*
   
@@ -243,8 +241,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
-.service__description {
-}
+
 .service__question {
   font-family: "BeVietnamPro-Bold";
   font-size: 4rem;
@@ -399,15 +396,7 @@ service__benefit:last-child {
   top: -65rem;
   left: 153rem;
 }
-/*
-.simplify3 {
-position: absolute;
-top: -12rem;
-  left: 61rem;
-  bottom: 0;
-  right: 0;
-  
-}*/
+
 .cta-wrapper {
   display: flex;
   justify-content: space-between;
@@ -439,31 +428,23 @@ top: -12rem;
   
   
 */
+
 .footer {
   background-color: hsl(233, 12%, 13%);
 }
-.footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 5rem 0;
+.footer-grid {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 .footer-logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-.footer-logo--mobile {
-  display: none;
-}
-.footer-logo__brand {
-}
-.footer-logo__link {
+  justify-self: start;
 }
 
-.footer-logo__socials {
-}
 .footer-logo__social {
   padding: 0 0.3rem;
 }
@@ -478,12 +459,12 @@ top: -12rem;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: -1.2rem;
-  width: 50rem;
 }
 .footer-list {
+  margin-right: 13rem;
+  margin-left: -12rem;
 }
-.footer-pages {
-}
+
 .footer-pages__item {
   padding: 0.8rem 0;
 }
@@ -499,6 +480,7 @@ top: -12rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  justify-self: end;
 }
 .footer-newsletter__form {
   display: flex;
@@ -513,21 +495,20 @@ top: -12rem;
 .footer-newsletter__input:focus {
   border: 2px solid hsl(12, 88%, 59%);
 }
-.footer-newsletter__btn {
-}
-.footer-newsletter__copyright {
-  font-size: 1.5rem;
-  color: #fff;
-}
-.footer-newsletter__form--mobile {
-  display: none;
-}
 
-.footer-newsletter__modal,
-.footer-newsletter__modal--mobile {
+.footer-newsletter__message {
+  display: none;
   color: red;
   font-size: 1.5rem;
   margin-bottom: 5rem;
-  margin-right: 10rem;
+  margin-right: 11rem;
+}
+
+.footer-copyright__text {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 4rem;
+}
+.footer-copyright--mobile {
   display: none;
 }
